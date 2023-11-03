@@ -76,3 +76,5 @@ Amsterdam, The Netherlands
 ## License
 
 This project is licensed under the GNU General Public License v2 - see the LICENSE.md file for details.
+
+[![View crxReader on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://nl.mathworks.com/matlabcentral/fileexchange/154556-crxreader)
