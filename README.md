@@ -65,6 +65,7 @@ imgData = crxReader('path/to/experiment.db', 'well', 'A01', 'saveas', 'output.ti
 ## Notes
 
 - This function is not suitable for time-series or Z-stack data.
+- Data for the examples_ is available in the release file.
 
 ## Author
 
