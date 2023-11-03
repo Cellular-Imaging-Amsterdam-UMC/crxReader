@@ -40,22 +40,31 @@ Optional parameters follow the MATLAB name-value pair convention:
 Here are some common usage examples:
 
 ```matlab
-% Read experiment metadata
+% Example 1: Retrieve experiment information.
 info = crxReader('path/to/experiment.db');
 
-% Read full image data from a specific well
+% Example 2: Read full image data from a specific well.
 imgData = crxReader('path/to/experiment.db', 'well', 'A01');
 
-% Read image data from a specific tile in a well
+% Example 3: Read image data from a specific tile in a well.
 imgData = crxReader('path/to/experiment.db', 'well', 'A01', 'tile', 5);
 
-% ... (additional examples can be included here)
+% Example 4: Read image data from all tiles in a well.
+imgData = crxReader('path/to/experiment.db', 'well', 'A01', 'tile', 'all');
+
+% Example 5: Read and save image data of a full well.
+imgData = crxReader('path/to/experiment.db', 'well', 'A01', 'saveas', 'output.tif');
+
+% Example 6: Read and save image data from all tiles in a well.
+imgData = crxReader('path/to/experiment.db', 'well', 'A01', 'tile', 'all','saveas', 'output.tif');
+
+% Example 7: Read, save, and display image data of a full well.
+imgData = crxReader('path/to/experiment.db', 'well', 'A01', 'saveas', 'output.tif', 'show', 1);
 ```
 
 ## Notes
 
 - This function is not suitable for time-series or Z-stack data.
-- Ensure unique filenames when saving images by including channel, well, tile, and pyramid level information.
 
 ## Author
 
